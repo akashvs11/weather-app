@@ -15,7 +15,7 @@ function App() {
 seterrror("")
 
 const response=
-      await fetch(`http://localhost:5000/weather?city=${city}`)
+      await fetch(`https://weather-app-ec5v.onrender.com/weather?city=${city}`)
       const data = await response.json();
       console.log(response.ok,response.status,data);
       if(!response.ok){
